@@ -1,0 +1,58 @@
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* List reset */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.app{
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  z-index: -1;
+
+}
+
