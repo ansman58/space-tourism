@@ -1,10 +1,10 @@
-import Home from "./pages/home";
-import style from "./App.module.scss"
+import style from "./App.module.scss";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className={style.app}>
-      <Home />
+      <Header />
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-basis: 50%;
+  }
+
+  .logo {
+    margin-left: 54px;
+  }
+
+  .hr {
+    position: relative;
+    display: block;
+    margin-left: 3rem;
+    z-index: 10;
+    height: 1px;
+    flex-basis: 80%;
+    background: hsl(var(--clr-white) / 0.25);
+  }
+
+  .nav {
+    flex-basis: 50%;
+  }
+}

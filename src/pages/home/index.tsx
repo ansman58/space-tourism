@@ -1,12 +1,16 @@
+import Navbar from "../../components/menu";
 import style from "./styles.module.scss";
+import Logo from "../../assets/shared/logo.svg";
 
 const Home = () => {
-  return <div className={style.home}>
-
-    <h1 className={style.h1}>
-        Hellp WOrld
-    </h1>
-  </div>
+  return (
+    <div className={style.home}>
+      <div>
+        <img src={Logo} alt="logo" />
+      </div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default Home;

@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+}
+
 /* Margin and padding reset */
 body,
 h1,
@@ -26,6 +43,10 @@ dd {
   padding: 0;
 }
 
+body {
+  font-family: var(--ff-sans-cond);
+}
+
 /* List reset */
 ul,
 ol {
@@ -45,14 +66,11 @@ img {
   height: auto;
 }
 
-.app{
+.app {
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   min-height: 100vh;
   z-index: -1;
-
 }
-
