@@ -1,4 +1,4 @@
-const destinations = [
+export const destinations = [
   {
     name: "Moon",
     images: {
@@ -45,7 +45,7 @@ const destinations = [
   },
 ];
 
-const crew = [
+export const crew = [
   {
     name: "Douglas Hurley",
     images: {
@@ -84,7 +84,7 @@ const crew = [
   },
 ];
 
-const technology = [
+export const technology = [
   {
     name: "Launch vehicle",
     images: {

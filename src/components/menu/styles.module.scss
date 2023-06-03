@@ -1,25 +1,19 @@
 .navBar {
   background-color: hsl(var(--clr-white) / 0.05);
-  //   padding-block: 32px;
   backdrop-filter: blur(1.5rem);
 }
 
 .ul {
   display: flex;
-  gap: 1rem;
-  //   margin: auto;
+  gap: 2rem;
   justify-content: center;
 }
 
 .li {
   display: flex;
   cursor: pointer;
-  border-bottom: 0.2rem solid hsl(var(--clr-white));
   padding-block: 32px;
-
-  &:hover {
-    color: red;
-  }
+  border-bottom: 0.2rem solid hsl(var(--clr-white));
 }
 
 .title,
@@ -31,4 +25,8 @@
 
 .num {
   margin-right: 9px;
+}
+
+.title {
+  font-weight: 200;
 }
