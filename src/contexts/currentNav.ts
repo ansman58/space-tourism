@@ -4,6 +4,7 @@ import {
   ICrewRole,
   IDestinationNavItems,
   INavItems,
+  ITechnology,
 } from "../interfaces";
 
 interface IInitialState {
@@ -13,6 +14,8 @@ interface IInitialState {
   setDestinationNav: React.Dispatch<React.SetStateAction<IDestinationNavItems>>;
   crewMember: ICrewRole;
   setCrewMember: React.Dispatch<React.SetStateAction<ICrewRole>>;
+  technology: ITechnology;
+  setTechnology: React.Dispatch<React.SetStateAction<ITechnology>>;
 }
 
 const initialState: IInitialState = {
@@ -22,6 +25,8 @@ const initialState: IInitialState = {
   setDestinationNav: () => {},
   crewMember: "Commander",
   setCrewMember: () => {},
+  technology: "Launch vehicle",
+  setTechnology: () => {},
 };
 
 export const CurrentNavContext = React.createContext(initialState);

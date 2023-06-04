@@ -6,6 +6,8 @@ export type ICrewRole =
   | "Pilot"
   | "Flight Engineer";
 
+export type ITechnology = "Launch vehicle" | "Spaceport" | "Space capsule";
+
 export type IDestination = {
   name: string;
   images: {
@@ -25,4 +27,13 @@ export type ICrewMember = {
   };
   role: string;
   bio: string;
+};
+
+export type ITechnologyItem = {
+  name: string;
+  images: {
+    portrait: string;
+    landscape: string;
+  };
+  description: string;
 };

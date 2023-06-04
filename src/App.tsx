@@ -1,9 +1,15 @@
 import style from "./App.module.scss";
 import Header from "./components/Header";
 import { CurrentNavContext } from "./contexts/currentNav";
-import { ICrewRole, IDestinationNavItems, INavItems } from "./interfaces";
+import {
+  ICrewRole,
+  IDestinationNavItems,
+  INavItems,
+  ITechnology,
+} from "./interfaces";
 import Crew from "./pages/Crew";
 import Destination from "./pages/Destination";
+import Technology from "./pages/Technology";
 import Home from "./pages/home";
 import React from "react";
 
@@ -13,6 +19,8 @@ function App() {
     React.useState<IDestinationNavItems>("Moon");
 
   const [crewMember, setCrewMember] = React.useState<ICrewRole>("Commander");
+  const [technology, setTechnology] =
+    React.useState<ITechnology>("Launch vehicle");
 
   const handleBackgroundImg = () => {
     switch (currentNav) {
@@ -38,6 +46,8 @@ function App() {
         setDestinationNav,
         crewMember,
         setCrewMember,
+        technology,
+        setTechnology,
       }}
     >
       <div
@@ -54,6 +64,8 @@ function App() {
             <Destination />
           ) : currentNav === "Crew" ? (
             <Crew />
+          ) : currentNav === "Technology" ? (
+            <Technology />
           ) : (
             <Home />
           )}

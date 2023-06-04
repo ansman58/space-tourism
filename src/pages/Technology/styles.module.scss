@@ -1,0 +1,39 @@
+.technology {
+  display: flex;
+
+  .left {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .numContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    // margin-right: 2rem;
+  }
+
+  .num {
+    border-radius: 50%;
+    border: 1px solid hsl(var(--clr-white) / 0.25);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: var(--ff-serif);
+
+    &:hover {
+      border: 1px solid hsl(var(--clr-white));
+    }
+  }
+
+  .active {
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
+  }
+}

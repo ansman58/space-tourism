@@ -84,7 +84,7 @@ export const crew = [
   },
 ];
 
-export const technology = [
+export const technologies = [
   {
     name: "Launch vehicle",
     images: {
