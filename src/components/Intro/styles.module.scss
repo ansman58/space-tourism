@@ -1,0 +1,15 @@
+.intro {
+  margin-bottom: 32px;
+  .num {
+    margin-right: 32px;
+    font-weight: 700;
+    color: hsl(var(--clr-white) / 0.25);
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    font-weight: 400;
+  }
+}

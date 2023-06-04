@@ -1,0 +1,49 @@
+.destination {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right {
+    flex-basis: 40%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: spin 50s linear infinite;
+  }
+
+  .nav {
+    background-color: unset;
+    backdrop-filter: unset;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .extra {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    border-top: 1px solid hsl(var(--clr-white) / 0.1);
+    padding-top: 40px;
+  }
+
+  .distanceP {
+    color: hsl(var(--clr-light));
+  }
+
+  .value {
+    font-family: var(--ff-serif);
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+}

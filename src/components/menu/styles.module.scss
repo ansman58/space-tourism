@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.ul2 {
+  justify-content: unset;
+}
+
 .li {
   display: flex;
   cursor: pointer;
@@ -17,6 +21,10 @@
   &:hover {
     border-bottom: 0.2rem solid hsl(var(--clr-light));
   }
+}
+
+.li2 {
+  padding-block: 8px;
 }
 
 .title,

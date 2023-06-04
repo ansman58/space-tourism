@@ -136,3 +136,10 @@ export const navItems = [
     title: "Technology",
   },
 ];
+
+export const destinationNavItems = [
+  { title: "Moon" },
+  { title: "Mars" },
+  { title: "Europa" },
+  { title: "Titan" },
+];
