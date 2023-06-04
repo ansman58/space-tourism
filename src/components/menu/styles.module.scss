@@ -1,6 +1,7 @@
 .navBar {
   background-color: hsl(var(--clr-white) / 0.05);
   backdrop-filter: blur(1.5rem);
+  padding-inline: 40px;
 }
 
 .ul {
@@ -62,9 +63,12 @@
 }
 
 @media (max-width: 600px) {
-  // .hideNav {
-  //   display: none;
-  // }
+
+
+  .hideUl {
+    display: none;
+  }
+
   .mainNav {
     width: 70vw;
     position: fixed;
@@ -97,6 +101,13 @@
       }
     }
   }
+
+  .hideNav {
+    background-color: unset;
+    backdrop-filter: unset;
+    position: unset;
+  }
+  
   .ul {
     flex-direction: column;
     min-height: 100vh;

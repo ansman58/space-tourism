@@ -30,18 +30,23 @@ const Crew = () => {
           />
 
           <div className={style.toggleContainer}>
-            {crew.map((member) => (
+            {crew.map((member, index) => (
               <div
+                key={index}
                 className={clsx(style.toggle, {
                   [style.active]: member.role === crewMember,
                 })}
-                onClick={() => setCrewMember(member.role as ICrewRole)}
+                onClick={() => {console.log(member); setCrewMember(member.role as ICrewRole)}}
               ></div>
             ))}
           </div>
         </div>
         <div className={style.imgContainer}>
-        <img src={data?.images?.png} alt="crew member" className={style.img} />
+          <img
+            src={data?.images?.png}
+            alt="crew member"
+            className={style.img}
+          />
         </div>
       </div>
     </div>

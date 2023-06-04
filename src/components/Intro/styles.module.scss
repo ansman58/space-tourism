@@ -15,5 +15,15 @@
 
   @media (max-width: 768px) {
     text-align: center;
+
+    .num {
+      margin-right: 16px;
+    }
+
+    .title,
+    .num {
+      font-size: 16px;
+      letter-spacing: unset;
+    }
   }
 }

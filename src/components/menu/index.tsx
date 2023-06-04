@@ -44,7 +44,7 @@ const Navbar = (props: INavbar) => {
           />
         )}
       </div>
-      <ul className={style.ul}>
+      <ul className={clsx(style.ul, { [style.hideUl]: !isMobileNavOpen })}>
         {navItems?.map((item, index) => (
           <li
             key={index}
