@@ -13,7 +13,10 @@
   display: flex;
   cursor: pointer;
   padding-block: 32px;
-  border-bottom: 0.2rem solid hsl(var(--clr-white));
+
+  &:hover {
+    border-bottom: 0.2rem solid hsl(var(--clr-light));
+  }
 }
 
 .title,
@@ -29,4 +32,12 @@
 
 .title {
   font-weight: 200;
+}
+
+.active {
+  border-bottom: 0.2rem solid hsl(var(--clr-white));
+
+  &:hover {
+    border-bottom: 0.2rem solid hsl(var(--clr-white));
+  }
 }
