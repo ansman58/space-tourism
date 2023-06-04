@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  ICrewMember,
   ICrewRole,
   IDestinationNavItems,
   INavItems,

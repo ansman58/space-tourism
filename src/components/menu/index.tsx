@@ -4,26 +4,46 @@ import React from "react";
 import { CurrentNavContext } from "../../contexts/currentNav";
 import { INavItems } from "../../interfaces";
 import { navItems } from "../../../data";
-
+import Hamburger from "../../assets/shared/icon-hamburger.svg";
+import CloseIcon from "../../assets/shared/icon-close.svg";
 interface INavbar {
   className?: string;
-  data: any[];
 }
 
 const Navbar = (props: INavbar) => {
   const { setCurrentNav } = React.useContext(CurrentNavContext);
   const [active, setActive] = React.useState("Home");
+  const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
 
   const getActiveNav = (index: number, title: string) => {
     if (navItems[index].title !== title) return;
-    console.log("title", title);
     setActive(title);
     setCurrentNav(title as INavItems);
-    localStorage.setItem("activeNav", title);
   };
 
   return (
-    <nav className={clsx(style.navBar, props.className)}>
+    <nav
+      className={clsx(style.navBar, props.className, style.mainNav, {
+        [style.hideNav]: !isMobileNavOpen,
+      })}
+    >
+      <div className={style.toggleIconContainer}>
+        {isMobileNavOpen ? (
+          <img
+            src={CloseIcon}
+            alt="close nav icon"
+            className={style.hamburger}
+            onClick={() => setIsMobileNavOpen(false)}
+          />
+        ) : (
+          <img
+            src={Hamburger}
+            alt="open nav icon"
+            className={style.hamburger}
+            onClick={() => setIsMobileNavOpen(true)}
+          />
+        )}
+      </div>
       <ul className={style.ul}>
         {navItems?.map((item, index) => (
           <li
@@ -31,7 +51,6 @@ const Navbar = (props: INavbar) => {
             onClick={() => getActiveNav(index, item.title)}
             className={clsx(style.li, {
               [style.active]: active === item.title,
-              // [style.li2]: !props.isPrimaryNav,
             })}
           >
             <p className={style.num}>{item.num}</p>

@@ -23,7 +23,7 @@ const DestinationMenu = (props: IDestinationMenu) => {
 
   return (
     <nav className={clsx(style.navBar, props.className)}>
-      <ul className={clsx(style.ul, style.ul2)}>
+      <ul className={clsx(style.ul2)}>
         {destinationNavItems?.map((item, index) => (
           <li
             key={index}
