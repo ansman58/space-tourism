@@ -1,7 +1,13 @@
 .crew {
+  max-width: 100%;
   .flex {
     display: flex;
     align-items: center;
+    gap: 3rem;
+  }
+
+  .left {
+    flex-basis: 40%;
   }
 
   .toggleContainer {
@@ -21,7 +27,7 @@
   }
 
   .active {
-    background-color: white;
+    background-color: hsl(var(--clr-white));
   }
 
   .sectionTitle {
@@ -35,5 +41,46 @@
     font-size: 32px !important;
     text-transform: uppercase;
     color: hsl(var(--clr-white) / 0.5);
+  }
+
+  .imgContainer {
+    flex-basis: 50%;
+  }
+
+  .img {
+    max-width: 100%;
+    flex-basis: 50%;
+    // background-color: red;
+  }
+
+  @media (max-width: 768px) {
+    .flex {
+      flex-direction: column-reverse;
+    }
+
+    .img {
+      max-width: 50%;
+      object-fit: cover;
+    }
+
+    .toggleContainer {
+      justify-content: center;
+    }
+
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+      flex-basis: unset;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sectionTitle {
+      font-size: 24px !important;
+    }
+
+    .sectionSubtitle {
+      font-size: 16px !important;
+    }
   }
 }

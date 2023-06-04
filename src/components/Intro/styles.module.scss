@@ -12,4 +12,8 @@
     letter-spacing: 4.725px;
     font-weight: 400;
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }

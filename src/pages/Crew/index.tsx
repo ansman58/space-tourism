@@ -1,11 +1,11 @@
 import React from "react";
+import clsx from "clsx";
 import style from "./styles.module.scss";
 import Intro from "../../components/Intro";
 import Section from "../../components/Section";
 import { crew } from "../../../data";
 import { ICrewMember, ICrewRole } from "../../interfaces";
 import { CurrentNavContext } from "../../contexts/currentNav";
-import clsx from "clsx";
 
 const Crew = () => {
   const [data, setData] = React.useState<ICrewMember | null>(null);
@@ -18,9 +18,9 @@ const Crew = () => {
 
   return (
     <div className={style.crew}>
-      <Intro num="01" title="MEET YOUR CREW" />
+      <Intro num="02" title="MEET YOUR CREW" />
       <div className={style.flex}>
-        <div>
+        <div className={style.left}>
           <Section
             subtitle={data?.role}
             title={data?.name as string}
@@ -40,7 +40,9 @@ const Crew = () => {
             ))}
           </div>
         </div>
+        <div className={style.imgContainer}>
         <img src={data?.images?.png} alt="crew member" className={style.img} />
+        </div>
       </div>
     </div>
   );

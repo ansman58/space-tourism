@@ -21,7 +21,7 @@ const Destination = () => {
     <div className={style.destination}>
       <div className={style.flex}>
         <div className={style.left}>
-          <Intro num="00" title="PICK YOUR DESTINATION" />
+          <Intro num="01" title="PICK YOUR DESTINATION" />
 
           <img
             src={data?.images.png}
@@ -31,7 +31,7 @@ const Destination = () => {
         </div>
 
         <div className={style.right}>
-          <DestinationMenu className={style.nav} />
+          <DestinationMenu className={style.nav}/>
 
           <Section
             title={data?.name as string}

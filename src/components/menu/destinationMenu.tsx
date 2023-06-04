@@ -7,6 +7,7 @@ import { CurrentNavContext } from "../../contexts/currentNav";
 
 interface IDestinationMenu {
   className?: string;
+  ulClass?: string;
 }
 
 const DestinationMenu = (props: IDestinationMenu) => {

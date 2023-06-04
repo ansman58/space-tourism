@@ -16,4 +16,16 @@
     letter-spacing: 4.75px;
     font-family: var(--ff-serif);
   }
+
+  @media (max-width: 768px) {
+    .h2,
+    .h1,
+    .p {
+      text-align: center;
+    }
+
+    .h1 {
+      font-size: 80px;
+    }
+  }
 }

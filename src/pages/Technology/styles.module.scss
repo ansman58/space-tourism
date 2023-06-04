@@ -1,7 +1,13 @@
 .technology {
-  display: flex;
+  .mainContent {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .left {
+    flex-basis: 45%;
     display: flex;
     gap: 2rem;
   }
@@ -9,9 +15,7 @@
   .numContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    // margin-right: 2rem;
+    gap: 3rem;
   }
 
   .num {
@@ -35,5 +39,51 @@
   .active {
     background-color: hsl(var(--clr-white));
     color: hsl(var(--clr-dark));
+  }
+
+  .imgContainer {
+    flex-basis: 40%;
+  }
+  .sectionTitle {
+    font-size: 52px !important;
+    text-transform: uppercase;
+    letter-spacing: unset !important;
+  }
+
+  .sectionSubtitle {
+    font-family: var(--ff-serif);
+    font-size: 16px !important;
+    letter-spacing: unset !important;
+    text-transform: uppercase;
+    color: hsl(var(--clr-white) / 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .mainContent {
+      flex-direction: column-reverse;
+    }
+
+    .left {
+      flex-direction: column;
+    }
+
+    .numContainer {
+      flex-direction: row;
+      justify-content: center;
+      margin-block: 2rem;
+    }
+
+    .imgContainer {
+      width: 100vw;
+    }
+
+    .img {
+      max-height: 270px;
+      width: 100vw;
+    }
+
+    .sectionTitle {
+      font-size: 24px !important;
+    }
   }
 }

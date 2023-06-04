@@ -46,6 +46,7 @@ dd {
 body {
   font-family: var(--ff-sans-cond);
   color: white;
+  background-color: hsl(var(--clr-dark));
 }
 
 /* List reset */
@@ -68,7 +69,6 @@ img {
 }
 
 .app {
-  // background-image: url("../assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,4 +82,12 @@ img {
 .sections {
   max-width: 70%;
   margin: auto;
+
+  @media (max-width: 1200px) {
+    max-width: 80%;
+  }
+
+  // @media (max-width: 768px) {
+  //   max-width: 90%;
+  // }
 }

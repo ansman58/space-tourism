@@ -49,3 +49,9 @@
     border-bottom: 0.2rem solid hsl(var(--clr-white));
   }
 }
+
+@media (max-width: 768px) {
+  .ul2 {
+    justify-content: center;
+  }
+}
