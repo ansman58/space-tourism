@@ -1,11 +1,18 @@
 import React from "react";
-import { IDestinationNavItems, INavItems } from "../interfaces";
+import {
+  ICrewMember,
+  ICrewRole,
+  IDestinationNavItems,
+  INavItems,
+} from "../interfaces";
 
 interface IInitialState {
   currentNav: INavItems;
   setCurrentNav: React.Dispatch<React.SetStateAction<INavItems>>;
   destinationNav: IDestinationNavItems;
-  setDestinationNav: React.Dispatch<React.SetStateAction<IDestinationNavItems>>
+  setDestinationNav: React.Dispatch<React.SetStateAction<IDestinationNavItems>>;
+  crewMember: ICrewRole;
+  setCrewMember: React.Dispatch<React.SetStateAction<ICrewRole>>;
 }
 
 const initialState: IInitialState = {
@@ -13,6 +20,8 @@ const initialState: IInitialState = {
   setCurrentNav: () => {},
   destinationNav: "Moon",
   setDestinationNav: () => {},
+  crewMember: "Commander",
+  setCrewMember: () => {},
 };
 
 export const CurrentNavContext = React.createContext(initialState);

@@ -1,8 +1,8 @@
 import style from "./App.module.scss";
 import Header from "./components/Header";
-import Intro from "./components/Intro";
 import { CurrentNavContext } from "./contexts/currentNav";
-import { IDestinationNavItems, INavItems } from "./interfaces";
+import { ICrewRole, IDestinationNavItems, INavItems } from "./interfaces";
+import Crew from "./pages/Crew";
 import Destination from "./pages/Destination";
 import Home from "./pages/home";
 import React from "react";
@@ -11,6 +11,8 @@ function App() {
   const [currentNav, setCurrentNav] = React.useState<INavItems>("Home");
   const [destinationNav, setDestinationNav] =
     React.useState<IDestinationNavItems>("Moon");
+
+  const [crewMember, setCrewMember] = React.useState<ICrewRole>("Commander");
 
   const handleBackgroundImg = () => {
     switch (currentNav) {
@@ -29,7 +31,14 @@ function App() {
 
   return (
     <CurrentNavContext.Provider
-      value={{ currentNav, setCurrentNav, destinationNav, setDestinationNav }}
+      value={{
+        currentNav,
+        setCurrentNav,
+        destinationNav,
+        setDestinationNav,
+        crewMember,
+        setCrewMember,
+      }}
     >
       <div
         className={style.app}
@@ -43,6 +52,8 @@ function App() {
             <Home />
           ) : currentNav === "Destinations" ? (
             <Destination />
+          ) : currentNav === "Crew" ? (
+            <Crew />
           ) : (
             <Home />
           )}

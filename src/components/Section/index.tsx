@@ -6,16 +6,16 @@ interface ISection {
   title: string;
   subtitle?: string;
   description: string;
+  titleClass?: string;
+  subtitleClass?: string;
 }
 
 const Section = (props: ISection) => {
   return (
     <div className={clsx(style.section, props.className)}>
-      <p className={style.h2}>{props.subtitle}</p>
-      <p className={style.h1}>{props.title}</p>
-      <p className={style.p}>
-       {props.description}
-      </p>
+      <p className={clsx(style.h2, props.subtitleClass)}>{props.subtitle}</p>
+      <p className={clsx(style.h1, props.titleClass)}>{props.title}</p>
+      <p className={style.p}>{props.description}</p>
     </div>
   );
 };

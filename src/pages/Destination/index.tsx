@@ -6,6 +6,7 @@ import { CurrentNavContext } from "../../contexts/currentNav";
 import { IDestination } from "../../interfaces";
 import style from "./styles.module.scss";
 import Intro from "../../components/Intro";
+import Distance from "../../components/Distance";
 
 const Destination = () => {
   const { destinationNav } = React.useContext(CurrentNavContext);
@@ -37,14 +38,8 @@ const Destination = () => {
             description={data?.description as string}
           />
           <div className={style.extra}>
-            <div className={style.distance}>
-              <p className={style.distanceP}>AVG. DISTANCE</p>
-              <p className={style.value}>{data?.distance}</p>
-            </div>
-            <div className={style.timeEstimate}>
-              <p className={style.distanceP}>EST. TRAVEL TIME</p>
-              <p className={style.value}>{data?.travel}</p>
-            </div>
+            <Distance title="AVG. DISTANCE" value={data?.distance as string} />
+            <Distance title="EST. TRAVEL TIME" value={data?.travel as string} />
           </div>
         </div>
       </div>

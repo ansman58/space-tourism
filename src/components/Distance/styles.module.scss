@@ -1,0 +1,12 @@
+.distance {
+  .distanceP {
+    color: hsl(var(--clr-light));
+    margin-bottom: 5px;
+  }
+
+  .value {
+    font-family: var(--ff-serif);
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+}

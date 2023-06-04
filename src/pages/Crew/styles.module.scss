@@ -1,0 +1,39 @@
+.crew {
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggleContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 6rem;
+  }
+
+  .toggle {
+    height: 15px;
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: hsl(var(--clr-white) / 0.25);
+
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: white;
+  }
+
+  .sectionTitle {
+    font-size: 52px !important;
+    text-transform: uppercase;
+    letter-spacing: unset !important;
+  }
+
+  .sectionSubtitle {
+    font-family: var(--ff-serif);
+    font-size: 32px !important;
+    text-transform: uppercase;
+    color: hsl(var(--clr-white) / 0.5);
+  }
+}
