@@ -12,6 +12,10 @@ import Destination from "./pages/Destination";
 import Technology from "./pages/Technology";
 import Home from "./pages/home";
 import React from "react";
+import HomeBg from "../assets/home/background-home-desktop.jpg";
+import DestinationBg from "../assets/destination/background-destination-desktop.jpg";
+import CrewBg from "../assets/crew/background-crew-desktop.jpg";
+import TechnologyBg from "../assets/home/background-home-desktop.jpg";
 
 function App() {
   const [currentNav, setCurrentNav] = React.useState<INavItems>("Home");
@@ -22,22 +26,14 @@ function App() {
   const [technology, setTechnology] =
     React.useState<ITechnology>("Launch vehicle");
 
-  const handleBackgroundImg = () => {
-    switch (currentNav) {
-      case "Home":
-        return "../assets/home/background-home-desktop.jpg";
-      case "Destinations":
-        return "../assets/destination/background-destination-desktop.jpg";
-      case "Crew":
-        return "../assets/crew/background-crew-desktop.jpg";
-      case "Technology":
-        return "../assets/technology/background-technology-desktop.jpg";
-      default:
-        return "../assets/home/background-home-desktop.jpg";
-    }
+  const backgroundImg = {
+    Home: HomeBg,
+    Destinations: DestinationBg,
+    Crew: CrewBg,
+    Technology: TechnologyBg,
   };
 
-  const navList = {
+  const navComponents = {
     Home: <Home />,
     Destinations: <Destination />,
     Crew: <Crew />,
@@ -45,7 +41,7 @@ function App() {
   };
 
   const getCurrentNav = () => {
-    return navList[currentNav] || navList.Home;
+    return navComponents[currentNav] || navComponents.Home;
   };
 
   return (
@@ -64,7 +60,7 @@ function App() {
       <div
         className={style.app}
         style={{
-          backgroundImage: `url(${handleBackgroundImg()})`,
+          backgroundImage: `url(${backgroundImg[currentNav]})`,
         }}
       >
         <Header />
