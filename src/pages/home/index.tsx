@@ -13,7 +13,6 @@ const Home = () => {
         back, and relax because we’ll give you a truly out of this world
         experience!"
       />
-
       <div className={style.second}>
         <p>Explore</p>
       </div>
