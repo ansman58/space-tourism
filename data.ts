@@ -117,12 +117,12 @@ export const technologies = [
 export const navItems = [
   {
     id: 0,
-    num: "00",
+    num: "01",
     title: "Home",
   },
   {
     id: 1,
-    num: "01",
+    num: "02",
     title: "Destinations",
   },
   {

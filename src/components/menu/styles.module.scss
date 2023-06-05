@@ -63,8 +63,6 @@
 }
 
 @media (max-width: 600px) {
-
-
   .hideUl {
     display: none;
   }
@@ -77,6 +75,8 @@
     bottom: 0;
     padding: 32px;
     z-index: 5;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
 
     .toggleIconContainer {
       display: flex;
@@ -107,7 +107,7 @@
     backdrop-filter: unset;
     position: unset;
   }
-  
+
   .ul {
     flex-direction: column;
     min-height: 100vh;

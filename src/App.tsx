@@ -37,6 +37,17 @@ function App() {
     }
   };
 
+  const navList = {
+    Home: <Home />,
+    Destinations: <Destination />,
+    Crew: <Crew />,
+    Technology: <Technology />,
+  };
+
+  const getCurrentNav = () => {
+    return navList[currentNav] || navList.Home;
+  };
+
   return (
     <CurrentNavContext.Provider
       value={{
@@ -57,21 +68,16 @@ function App() {
         }}
       >
         <Header />
-        <div className={style.sections}>
-          {currentNav === "Home" ? (
-            <Home />
-          ) : currentNav === "Destinations" ? (
-            <Destination />
-          ) : currentNav === "Crew" ? (
-            <Crew />
-          ) : currentNav === "Technology" ? (
-            <Technology />
-          ) : (
-            <Home />
-          )}
-        </div>
-        <p className={style.built}>Built by <a target="blank" href="https://www.linkedin.com/in/nnakwe-anslem-534047189/">Anslem Nnakwe</a> </p>
-
+        <div className={style.sections}>{getCurrentNav()}</div>
+        <p className={style.built}>
+          Built by{" "}
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/nnakwe-anslem-534047189/"
+          >
+            Anslem Nnakwe
+          </a>{" "}
+        </p>
       </div>
     </CurrentNavContext.Provider>
   );
