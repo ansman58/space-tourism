@@ -86,8 +86,9 @@ img {
   @media (max-width: 1200px) {
     max-width: 80%;
   }
+}
 
-  // @media (max-width: 768px) {
-  //   max-width: 90%;
-  // }
+.built {
+  text-align: center;
+  padding-block: 0.5rem;
 }

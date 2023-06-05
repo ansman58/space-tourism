@@ -70,6 +70,8 @@ function App() {
             <Home />
           )}
         </div>
+        <p className={style.built}>Built by <a target="blank" href="https://www.linkedin.com/in/nnakwe-anslem-534047189/">Anslem Nnakwe</a> </p>
+
       </div>
     </CurrentNavContext.Provider>
   );
