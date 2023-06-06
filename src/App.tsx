@@ -15,7 +15,7 @@ import React from "react";
 import HomeBg from "../assets/home/background-home-desktop.jpg";
 import DestinationBg from "../assets/destination/background-destination-desktop.jpg";
 import CrewBg from "../assets/crew/background-crew-desktop.jpg";
-import TechnologyBg from "../assets/home/background-home-desktop.jpg";
+import TechnologyBg from "../assets/technology/background-technology-desktop.jpg";
 
 function App() {
   const [currentNav, setCurrentNav] = React.useState<INavItems>("Home");
