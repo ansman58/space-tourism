@@ -1,8 +1,22 @@
+import ImageMars from "/assets/destination/image-mars.png";
+import ImageMoon from "/assets/destination/image-moon.png";
+import ImageEuropa from "/assets/destination/image-europa.png";
+import ImageTitan from "/assets/destination/image-titan.png";
+
+import CrewImageDouglas from "/assets/crew/image-douglas-hurley.png";
+import CrewImageMarkShuttleworth from "/assets/crew/image-mark-shuttleworth.png";
+import CrewImageVictorGlover from "/assets/crew/image-victor-glover.png";
+import CrewImageAnoushehAnsari from "/assets/crew/image-anousheh-ansari.png";
+
+import TechImgLaunchVehicle from "/assets/technology/image-launch-vehicle-portrait.jpg";
+import TechImgSpaceport from "/assets/technology/image-spaceport-portrait.jpg";
+import TechImgSpaceCapsule from "/assets/technology/image-space-capsule-portrait.jpg";
+
 export const destinations = [
   {
     name: "Moon",
     images: {
-      png: "/assets/destination/image-moon.png",
+      png: ImageMoon,
       webp: "/assets/destination/image-moon.webp",
     },
     description:
@@ -13,7 +27,7 @@ export const destinations = [
   {
     name: "Mars",
     images: {
-      png: "/assets/destination/image-mars.png",
+      png: ImageMars,
       webp: "/assets/destination/image-mars.webp",
     },
     description:
@@ -24,7 +38,7 @@ export const destinations = [
   {
     name: "Europa",
     images: {
-      png: "/assets/destination/image-europa.png",
+      png: ImageEuropa,
       webp: "/assets/destination/image-europa.webp",
     },
     description:
@@ -35,7 +49,7 @@ export const destinations = [
   {
     name: "Titan",
     images: {
-      png: "/assets/destination/image-titan.png",
+      png: ImageTitan,
       webp: "/assets/destination/image-titan.webp",
     },
     description:
@@ -49,7 +63,7 @@ export const crew = [
   {
     name: "Douglas Hurley",
     images: {
-      png: "/assets/crew/image-douglas-hurley.png",
+      png: CrewImageDouglas,
       webp: "/assets/crew/image-douglas-hurley.webp",
     },
     role: "Commander",
@@ -58,7 +72,7 @@ export const crew = [
   {
     name: "Mark Shuttleworth",
     images: {
-      png: "/assets/crew/image-mark-shuttleworth.png",
+      png: CrewImageMarkShuttleworth,
       webp: "/assets/crew/image-mark-shuttleworth.webp",
     },
     role: "Mission Specialist",
@@ -67,7 +81,7 @@ export const crew = [
   {
     name: "Victor Glover",
     images: {
-      png: "/assets/crew/image-victor-glover.png",
+      png: CrewImageVictorGlover,
       webp: "/assets/crew/image-victor-glover.webp",
     },
     role: "Pilot",
@@ -76,7 +90,7 @@ export const crew = [
   {
     name: "Anousheh Ansari",
     images: {
-      png: "/assets/crew/image-anousheh-ansari.png",
+      png: CrewImageAnoushehAnsari,
       webp: "/assets/crew/image-anousheh-ansari.webp",
     },
     role: "Flight Engineer",
@@ -88,7 +102,7 @@ export const technologies = [
   {
     name: "Launch vehicle",
     images: {
-      portrait: "/assets/technology/image-launch-vehicle-portrait.jpg",
+      portrait: TechImgLaunchVehicle,
       landscape: "/assets/technology/image-launch-vehicle-landscape.jpg",
     },
     description:
@@ -97,7 +111,7 @@ export const technologies = [
   {
     name: "Spaceport",
     images: {
-      portrait: "/assets/technology/image-spaceport-portrait.jpg",
+      portrait: TechImgSpaceport,
       landscape: "/assets/technology/image-spaceport-landscape.jpg",
     },
     description:
@@ -106,7 +120,7 @@ export const technologies = [
   {
     name: "Space capsule",
     images: {
-      portrait: "/assets/technology/image-space-capsule-portrait.jpg",
+      portrait: TechImgSpaceCapsule,
       landscape: "/assets/technology/image-space-capsule-landscape.jpg",
     },
     description:
