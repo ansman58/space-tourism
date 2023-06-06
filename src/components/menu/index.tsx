@@ -19,6 +19,7 @@ const Navbar = (props: INavbar) => {
     if (navItems[index].title !== title) return;
     setActive(title);
     setCurrentNav(title as INavItems);
+    setIsMobileNavOpen(false);
   };
 
   return (

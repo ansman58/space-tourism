@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 
   .logoContainer {
     display: flex;
     align-items: center;
     gap: 1rem;
     flex-basis: 50%;
-
   }
 
   .logo {
@@ -27,5 +27,15 @@
 
   .nav {
     flex-basis: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .hr {
+      display: none;
+    }
+
+    .logo {
+      margin-left: 32px;
+    }
   }
 }

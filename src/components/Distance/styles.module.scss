@@ -6,7 +6,11 @@
 
   .value {
     font-family: var(--ff-serif);
-    font-size: 28px;
+    font-size: 1.75rem;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 1.25rem;
   }
 }

@@ -72,7 +72,7 @@ function App() {
             href="https://www.linkedin.com/in/nnakwe-anslem-534047189/"
           >
             Anslem Nnakwe
-          </a>{" "}
+          </a>
         </p>
       </div>
     </CurrentNavContext.Provider>
