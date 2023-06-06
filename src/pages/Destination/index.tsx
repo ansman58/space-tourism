@@ -23,15 +23,17 @@ const Destination = () => {
         <div className={style.left}>
           <Intro num="01" title="PICK YOUR DESTINATION" />
 
-          <img
-            src={data?.images.png}
-            alt="revolving globe"
-            className={style.img}
-          />
+          <div className={style.imgContainer}>
+            <img
+              src={data?.images.png}
+              alt="revolving globe"
+              className={style.img}
+            />
+          </div>
         </div>
 
         <div className={style.right}>
-          <DestinationMenu className={style.nav}/>
+          <DestinationMenu className={style.nav} />
 
           <Section
             title={data?.name as string}

@@ -10,8 +10,7 @@
   }
 
   .img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     object-fit: cover;
     animation: spin 50s linear infinite;
   }
@@ -41,6 +40,11 @@
   @media (max-width: 768px) {
     .flex {
       flex-direction: column;
+    }
+
+    .imgContainer {
+      display: flex;
+      justify-content: center;
     }
 
     .extra {
