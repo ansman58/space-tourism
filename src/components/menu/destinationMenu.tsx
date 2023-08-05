@@ -22,7 +22,7 @@ const DestinationMenu = (props: IDestinationMenu) => {
   };
 
   return (
-    <nav className={clsx(style.navBar, props.className)}>
+    <nav className={clsx(style.navBar, style.navBar2, props.className)}>
       <ul className={clsx(style.ul2)}>
         {destinationNavItems?.map((item, index) => (
           <li

@@ -5,6 +5,11 @@
   padding-inline: 40px;
 }
 
+.navBar2 {
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
+
 .ul {
   display: flex;
   gap: 2rem;
@@ -51,6 +56,13 @@
   &:hover {
     border-bottom: 0.2rem solid hsl(var(--clr-white));
   }
+}
+
+.img-btn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: unset;
 }
 
 @media (max-width: 768px) {

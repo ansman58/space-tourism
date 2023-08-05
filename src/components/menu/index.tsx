@@ -22,6 +22,10 @@ const Navbar = (props: INavbar) => {
     setIsMobileNavOpen(false);
   };
 
+  const toggleNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  }
+
   return (
     <nav
       className={clsx(style.navBar, props.className, style.mainNav, {
@@ -30,19 +34,23 @@ const Navbar = (props: INavbar) => {
     >
       <div className={style.toggleIconContainer}>
         {isMobileNavOpen ? (
-          <img
-            src={CloseIcon}
-            alt="close nav icon"
-            className={style.hamburger}
-            onClick={() => setIsMobileNavOpen(false)}
-          />
+          <button className={style["img-btn"]}>
+            <img
+              src={CloseIcon}
+              alt="close nav icon"
+              className={style.hamburger}
+              onClick={toggleNav}
+            />
+          </button>
         ) : (
-          <img
-            src={Hamburger}
-            alt="open nav icon"
-            className={style.hamburger}
-            onClick={() => setIsMobileNavOpen(true)}
-          />
+          <button className={style["img-btn"]}>
+            <img
+              src={Hamburger}
+              alt="open nav icon"
+              className={style.hamburger}
+              onClick={toggleNav}
+            />
+          </button>
         )}
       </div>
       <ul className={clsx(style.ul, { [style.hideUl]: !isMobileNavOpen })}>

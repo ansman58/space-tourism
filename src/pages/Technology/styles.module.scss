@@ -86,4 +86,16 @@
       font-size: 24px !important;
     }
   }
+
+  @media (max-width: 600px) {
+    .numContainer {
+      margin-block: 0.5rem;
+    }
+
+    .num {
+      height: 40px;
+      width: 40px;
+      font-size: 1.125rem;
+    }
+  }
 }

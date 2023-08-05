@@ -36,7 +36,7 @@ const Crew = () => {
                 className={clsx(style.toggle, {
                   [style.active]: member.role === crewMember,
                 })}
-                onClick={() => {console.log(member); setCrewMember(member.role as ICrewRole)}}
+                onClick={() => {setCrewMember(member.role as ICrewRole)}}
               ></div>
             ))}
           </div>

@@ -56,6 +56,17 @@
     }
   }
 
+  @media (max-width: 600px) {
+    .flex {
+      gap: 2rem;
+    }
+
+    .extra {
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+  }
+
   @media (max-width: 400px) {
     .extra {
       flex-direction: column;

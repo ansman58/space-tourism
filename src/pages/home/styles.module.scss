@@ -23,5 +23,10 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 2rem;
+
+    .second {
+      padding: 60px;
+    }
   }
 }

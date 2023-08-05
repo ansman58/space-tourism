@@ -74,6 +74,9 @@
   }
 
   @media (max-width: 600px) {
+    .toggleContainer {
+      margin-top: 2rem;
+    }
     .sectionTitle {
       font-size: 24px !important;
     }
