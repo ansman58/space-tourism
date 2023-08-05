@@ -14,6 +14,7 @@ const Destination = () => {
 
   React.useEffect(() => {
     const list = destinations.find((item) => item.name === destinationNav);
+
     setData(list as IDestination);
   }, [destinationNav]);
 
@@ -25,7 +26,7 @@ const Destination = () => {
 
           <div className={style.imgContainer}>
             <img
-              src={data?.images.png}
+              src={data?.images?.png}
               alt="revolving globe"
               className={style.img}
             />

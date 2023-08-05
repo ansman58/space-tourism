@@ -1,6 +1,7 @@
 .navBar {
   background-color: hsl(var(--clr-white) / 0.05);
   backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
   padding-inline: 40px;
 }
 
