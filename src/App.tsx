@@ -66,7 +66,7 @@ function App() {
         <Header />
         <div className={style.sections}>{getCurrentNav()}</div>
         <p className={style.built}>
-          Built by{" "}
+          Built with ❤️ by{" "}
           <a
             target="blank"
             href="https://www.linkedin.com/in/nnakwe-anslem-534047189/"
